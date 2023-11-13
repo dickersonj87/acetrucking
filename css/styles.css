@@ -78,6 +78,30 @@ button.btn {
     -webkit-overflow-scrolling: touch;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    list-style-type: none;
+    margin-right: 5%;
+  }
+  
+  .nav-link {
+    margin-right: 1%;
+  }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-item {
+    flex-grow: 2;
+    text-align: center; /* if you want the text to be centered */
+  }
+
 .btn-bd-primary {
     --bd-violet-bg: #712cf9;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
@@ -276,6 +300,10 @@ button.btn {
 
 .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
+}
+
+nav {
+    position: relative;
 }
 
 /* Jumbotron Home */
