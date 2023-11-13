@@ -448,6 +448,35 @@ button.accent-muted {
     }
 }
 
+.carousel-container {
+    max-width: 80%; /* Adjust as needed */
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    background-color: #292929;
+  }
+  
+  #myCarousel {
+    position: relative;
+    left: 40%;
+    width: 50%;
+
+  }
+  
+  .carousel .carousel-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%);
+  }
+
+  #myCarousel .carousel-item img {
+    border-radius: 15px;
+  }
 
 
 /* CUSTOMIZE THE MODALS
