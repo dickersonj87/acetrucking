@@ -463,3 +463,52 @@ button.accent-muted {
 .modal-header {
     border-bottom: none;
 }  
+
+/* CUSTOMIZE THE FOOTER
+-------------------------------------------------- */
+.bg-cover {
+    background-position: 50%!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+.border-gray-700 {
+    border-color: #303030!important;
+}
+.py-12 {
+    padding-bottom: 6rem!important;
+    padding-top: 6rem!important;
+}
+
+.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    box-shadow: 0 0;
+    color: #1f1f1f;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .875rem 1.5rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+}
+
+.form-control-gray-700 {
+    background-color: #303030;
+    border-color: #303030;
+    color: #fff;
+}
+
+.form-control-gray-700::placeholder {
+    color: #e1e1e1;
+    opacity: .75;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+}

@@ -53,55 +53,6 @@
       </div>
     </nav>
 
-    <!-- Theme switcher (light and dark mode) -->
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
-        aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
-          <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-            aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-            aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-            aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-
     <!-- Jumbotron -->
     <div class="jumbotron-home">
       <!-- <img class="jumbotron-home-img" src="/img/hero.png" alt="Background image"> -->
@@ -491,84 +442,104 @@
         </div>
       </div>
     </div>
+
+
+    <!-- CTA Hero -->
+    <div class="container">
+      <div class="pb-md-4 pt-md-5 mx-auto text-center">
+        <h5 class="display-5 fw-normal pb-md-4">Schedule Today!</h5>
+        <p class="fs-5 text-body-primary">Our students have a 97% pass rate on their first attempt of the CDL exam due to our hands-on approach.</p>
+        <p class="fs-5 text-body-primary pb-4">We are always ready to train highly motivated individuals to help your career move forward!</p>
+        <button class="btn px-4 mb-5 jumbotron-home-btn accent-red mx-auto" type="button">
+          Enroll for December 2023
+        </button>
+      </div>
+    </div>
     
 
     <!-- Footer -->
-    <div class="container">
-      <footer class="py-5">
-        <div class="row">
+    <footer class="bg-dark bg-cover " style="background-image: url(img/footer-bg.svg)">
+      <div class="py-12 border-bottom border-gray-700">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <!-- Heading -->
+              <h6 class="heading-md mb-4 text-white">
+                Ready to get started?
+              </h6>
+              <!-- Form -->
+              <form>
 
-          <div class="col-6 col-md-6 mb-3">
-            <form class="needs-validation nav flex-column" novalidate>
-              <div class="row g-3">
-                <div class="col-12">
-                  <input type="text" class="form-control" id="name" placeholder="Name" value="">
-                  <div class="invalid-feedback">
-                    Valid name is required.
-                  </div>
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="contactName">
+                    Your Name *
+                  </label>
+                  <input class="form-control form-control-sm form-control-gray-700" id="contactName" type="text" placeholder="Your Name *" required="">
                 </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" id="email" placeholder="Email*" value="" required>
-                  <div class="invalid-feedback">
-                    Valid email is required.
-                  </div>
+  
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="contactEmail">
+                    Your Email *
+                  </label>
+                  <input class="form-control form-control-sm form-control-gray-700" id="contactEmail" type="email" placeholder="Your Email *" required="">
                 </div>
-
-                <div class="col-12">
-                  <div class="input-group has-validation">
-                    <textarea class="form-control" id="comments" placeholder="Comments" required></textarea>
-                    <div class="invalid-feedback">
-                      Comments limited to 100 characters.
-                    </div>
-                  </div>
+  
+                <!-- Email -->
+                <div class="form-group mb-7">
+                  <label class="visually-hidden" for="contactMessage">
+                    Message *
+                  </label>
+                  <textarea class="form-control form-control-sm form-control-gray-700" id="contactMessage" rows="5" placeholder="Message *" required=""></textarea>
                 </div>
+  
+                <!-- Button -->
+                <button class="btn accent-red">
+                  Send Message
+                </button>
+  
+              </form>
+    
+            </div>
 
-            </form>
+            <div class="col-6 col-sm-3">
+    
+              <!-- Heading -->
+              <h6 class="heading-xs mb-4 text-white">
+                Advance Career Education, LLC
+              </h6>
+    
+              <!-- Links -->
+              <p class="mb-7 mb-sm-0 text-white pb-3">3119 Chamber St. Suite 5<br/>Mansfield Texas 76084</p>
+              <p class="mb-7 mb-sm-0 text-white pb-3">(817) 864-8086</p>
+              <p class="mb-7 mb-sm-0 text-white pb-3">andrewb@advancecareeredu.com</p>    
+            </div>
+            <div class="col-6 col-sm-3">
+    
+              <!-- Heading -->
+              <h6 class="heading-xs mb-4 text-white">
+                Office Hours
+              </h6>
+              <!-- Links -->
+              <p class="mb-7 mb-sm-0 text-white pb-3">M-F | 8:30am-4:00pm</p>
+
+              <!-- Heading -->
+              <h6 class="heading-xs mb-4 text-white">
+                Socials
+              </h6>
+              <!-- Links -->
+              <p class="mb-7 mb-sm-0 text-white">Facebook</p>
+              <p class="mb-7 mb-sm-0 text-white">Yelp</p>
+    
+            </div>
+
           </div>
         </div>
-
-
-        <div class="col-3 col-md-3 mb-3">
-          <h5>Advance Career Education, LLC</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-3 col-md-3 mb-3">
-          <h5>Office Hours</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-
-    </div>
-
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2023 ACE Trucking School. All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter" />
-            </svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram" />
-            </svg></a></li>
-        <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook" />
-            </svg></a></li>
-      </ul>
-    </div>
+      </div>
+      
     </footer>
-    </div>
+    
 
   </main>
 
