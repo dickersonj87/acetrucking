@@ -484,6 +484,24 @@ nav {
     width: 100%;
   }
 
+#desktop-nav {
+    display: block;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #desktop-nav {
+        display: none;
+    }
+    
+    #mobile-nav {
+        display: block;
+    }
+}
+
 
 /* FOOTER
 -------------------------------------------------- */
